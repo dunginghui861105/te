@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘董生日快乐！</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title animate-title">亲爱的刘董，祝您生日快乐！</h1>
+        <p class="sub-title">在这个特别的日子里，让我们一起为您送上最诚挚的祝福。</p>
+    </header>
+
+    <main>
+        <div class="photo-section">
+            <img src="C:\Users\hp\Desktop\dfa9dc346769f994c21f92b9e83653f.jpg" alt="刘董照片" id="directorPhoto" class="director-photo">
+            <div class="wishes">
+                <p>尊敬的刘董，今天是您的生日，您就像我们的领航者，带领我们不断前进，在这个特殊的日子里，愿您岁岁安康，事事顺心，新的一岁里，幸福与您常伴，梦想与您同行，继续闪耀光芒，为您献上我们最衷心的生日祝福！</p>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <audio id="birthdaySong" src="birthday-song.mp3"></audio>
+            <button id="playButton">播放音乐</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div class="cake-animation">
+            <!-- 蛋糕动画将通过 CSS 实现 -->
+        </div>
+
+        <div class="employee-wishes">
+            <h2>同事祝福</h2>
+            <div class="wishes-container">
+                <!-- 祝福语将通过 JavaScript 动态添加 -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="company-logo.png" alt="公司标志" class="company-logo">
+        <p class="copyright">© 2024 公司名称版权所有</p>
+    </footer>
+
+    <div id="photoModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img id="modalImage" src="" alt="放大的照片">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #ff4d4d;
+    --secondary-color: #ffdb4d;
+    --text-color: #333;
+    --background-color: #fff5f5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.main-title {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+    animation: titleGlow 2s infinite;
+}
+
+@keyframes titleGlow {
+    0% { text-shadow: 0 0 10px rgba(255, 77, 77, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(255, 77, 77, 0.8); }
+    100% { text-shadow: 0 0 10px rgba(255, 77, 77, 0.5); }
+}
+
+.sub-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.director-photo {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.director-photo:hover {
+    transform: scale(1.05);
+}
+
+.wishes {
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 音乐播放器样式 */
+.music-player {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+} 
